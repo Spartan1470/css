@@ -1,0 +1,88 @@
+/*
+
+p{
+    color: chartreuse;
+    background-color: black;
+}
+h2{
+    color: red;
+    background-color: yellow;
+}
+.p2{
+    color: blueviolet;
+    background-color: gray;
+}
+#subtitulo2{
+    color: blue;
+    background-color: gray;
+}
+.derecha{
+    text-align: right;
+}
+*/
+
+/*
+    selector >, selecciona etiquetas que esten
+    dentro de otras del nivel siguiente
+
+p > span > p {
+    color: red;
+}
+/*
+    selector (espacio), selecciona etiquetas que esten
+    dentro de otras sin importar el nivel
+
+div p{
+    color: blue;
+}
+/*
+    selector *, selecciona todas las etiquetas
+
+* p{
+    color: brown;
+}
+*/
+/*
+    selector +, selecciona una etiqueta que esta
+    despues de otra
+
+span + p{
+    color: red;
+}
+/*
+    selector ~, selecciona todas las etiquetas que estan
+    despues de otra
+
+span ~ p{
+    color: red;
+}
+/*
+    selector "," sirve para compartir
+    estilos
+
+span > p,
+span + p + p{
+    color: red;
+}
+*/
+/*
+    selector [] seleciona la etiqueta por
+    el atributo
+*/
+img[title]{
+    width: 300px;
+    height: 300px;
+}
+/*
+img[title="imagen"]{
+    border: 3px solid red;
+}
+img[title^="ima"]{
+    border: 3px solid red;
+}
+img[title$="sol"]{
+    border: 3px solid red;
+}*/
+img[title*="de"]{
+    border: 3px solid red;
+}
